@@ -17,33 +17,6 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-	
-		<dependency>
-			<groupId>org.glassfish.jersey.inject</groupId>
-			<artifactId>jersey-hk2</artifactId>
-			<version>2.26</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>2.26</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.glassfish.jersey.containers</groupId>
-			<artifactId>jersey-container-servlet</artifactId>
-			<version>2.26</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.22</version>
-		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -64,14 +37,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
 	</dependencies>
-
+	
 	<build>
-			<plugins>
-			    <plugin>
-				  <groupId>org.springframework.boot</groupId>
-				  <artifactId>spring-boot-maven-plugin</artifactId>
-				</plugin>  
-		    </plugins>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>	
+		</plugins>		
 	</build>
+	
 
 </project>

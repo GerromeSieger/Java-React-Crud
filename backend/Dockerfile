@@ -1,12 +1,14 @@
-FROM maven:3.8.6-jdk-11 as build
+FROM maven:3.6.3-jdk-11 as build
 
 WORKDIR /opt/app
 
 COPY pom.xml .
 
-COPY src /opt/app
+COPY . /opt/app
 
-RUN mvn install -U
+VOLUME ~/.m2 /root/.m2
+
+RUN mvn install -Dmaven.test.skip=true
 
 FROM adoptopenjdk/openjdk11:alpine-jre
 

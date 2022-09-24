@@ -66,23 +66,12 @@
 	</dependencies>
 
 	<build>
-	    <pluginManagement>	
 			<plugins>
 			    <plugin>
 				  <groupId>org.springframework.boot</groupId>
 				  <artifactId>spring-boot-maven-plugin</artifactId>
-				  <configuration>
-					<archive>
-					  <manifest>
-						<addClasspath>true</addClasspath>
-						<classpathPrefix>lib/</classpathPrefix>
-						<mainClass>StudentsystemApplication</mainClass>
-					  </manifest>
-					</archive>
-				  </configuration>					
-				</plugin>
+				</plugin>  
 		    </plugins>
-		</pluginManagement>	
 	</build>
 
 </project>
