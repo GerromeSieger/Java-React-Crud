@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   backend:
+    image: gerrome/java-react-crud_backend:1
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -23,6 +24,7 @@ services:
       - mysql
   
   frontend:
+    image: gerrome/java-react-crud_frontend:1
     build:
       context: ./frontend
       dockerfile: Dockerfile
