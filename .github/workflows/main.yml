@@ -35,4 +35,4 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: gerrome/java-react-crud_backend:1       
+          tags: gerrome/java-react-crud_frontend:1       
