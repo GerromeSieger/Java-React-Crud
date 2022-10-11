@@ -3,9 +3,9 @@ version: "3.3"
 services:
   backend:
     image: gerrome/java-react-crud_backend:1
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+  #  build:
+  #    context: ./backend
+  #    dockerfile: Dockerfile
     restart: unless-stopped
     env_file: ./.env
     ports:
@@ -25,9 +25,9 @@ services:
   
   frontend:
     image: gerrome/java-react-crud_frontend:1
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+  #  build:
+  #    context: ./frontend
+  #    dockerfile: Dockerfile
     ports:
       - "3000:3000"
     restart: unless-stopped
@@ -53,7 +53,7 @@ services:
     image: gerrome/java-react-crud_nginx:1
     #build:
     #  context: ./nginx
-      dockerfile: Dockerfile
+   #   dockerfile: Dockerfile
     ports:
       - "80:80"
     restart: unless-stopped
