@@ -51,8 +51,8 @@ services:
 
   nginx:
     image: gerrome/java-react-crud_nginx:1
-    build:
-      context: ./nginx
+    #build:
+    #  context: ./nginx
       dockerfile: Dockerfile
     ports:
       - "80:80"
