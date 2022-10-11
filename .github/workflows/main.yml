@@ -36,3 +36,10 @@ jobs:
           context: ./frontend
           push: true
           tags: gerrome/java-react-crud_frontend:1       
+
+      - name: Build and push nginx
+        uses: docker/build-push-action@v3
+        with:
+          context: ./nginx
+          push: true
+          tags: gerrome/java-react-crud_nginx:1       
