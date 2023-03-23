@@ -23,7 +23,7 @@ export default function Student() {
     e.preventDefault()
     const student={name,address}
     console.log(student)
-    fetch("http://app.ifahsvictor.com/abi/student/add",{
+    fetch("http://app.ifahsvictor.com/student/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(student)
@@ -34,7 +34,7 @@ export default function Student() {
 }
 
 useEffect(()=>{
-  fetch("http://app.ifahsvictor.com/api/student/getAll")
+  fetch("http://app.ifahsvictor.com/student/getAll")
   .then(res=>res.json())
   .then((result)=>{
     setStudents(result);
